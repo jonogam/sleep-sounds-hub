@@ -9,7 +9,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="muted">Last updated: 3 November 2026</p>
+<p class="muted">Last updated: 5 November 2026</p>
 
 <p>Sleep Sounds Hub ("the app") is a personal desktop tool that creates ambience videos and uploads
 them to the YouTube channel of the person who runs it. This policy explains what the app accesses
@@ -24,9 +24,14 @@ comment count) and privacy status of the videos the app uploaded.</li>
 <li><code>yt-analytics.readonly</code> – to read your own channel's YouTube Analytics (views, watch time,
 average view duration, subscribers gained and lost, likes, traffic sources and the search terms viewers
 used) for a weekly performance report shown only to you.</li>
+<li><code>youtube.force-ssl</code> – to read the comments viewers leave on your channel's videos, to post
+replies to them that you have approved, to hold likely spam for your review and publish or remove it at
+your request, to keep series playlists of your own videos, and to add a "watch next" link to your own
+videos' descriptions.</li>
 </ul>
-<p>The app does not read your email, contacts, comment text, watch history, the identities of your
-subscribers, or any other Google data, and it never accesses any other channel.</p>
+<p>The app does not read your email, contacts, watch history, the identities of your subscribers, or any
+other Google data, and it never accesses any other channel. Comments are read only on your own channel's
+videos, and the app never posts a reply you haven't approved.</p>
 
 <h2>How the data is used and stored</h2>
 <ul>
@@ -37,11 +42,21 @@ upload videos you have approved and to read the statistics described above.</li>
 weekly report files), so the weekly report can compare performance over time. They are refreshed
 every day the app runs while it is still authorised; if access is revoked, the app stops collecting
 them.</li>
-<li>The app has no server. Nothing is sent to the developer or to any third party. The only network
-requests are to Google/YouTube (to sign in, upload and read your statistics) and to Freesound.org (to
-download public-domain sound recordings).</li>
+<li>Viewer comments (the commenter's display name and comment text) are stored only on your computer, so
+the app can remember which comments it has already handled.</li>
+<li>The app has no server and sends nothing to the developer. Its network requests go to:
+<ul>
+<li>Google/YouTube – to sign in, upload, read your statistics and comments, and post approved replies;</li>
+<li>Freesound.org – to download public-domain sound recordings;</li>
+<li>Anthropic (the Claude API) – your channel statistics, to write your spoken daily briefing, and the text
+of a viewer comment with the video's title, to draft a reply for you to approve. Anthropic processes this
+under its commercial terms;</li>
+<li>Telegram – the briefings, drafted replies and held comments are sent as messages to your own Telegram
+account, which is where you approve or reject them.</li>
+</ul></li>
 <li>The app uses no cookies, tracking or advertising.</li>
-<li>No data is sold, shared, used for advertising, or used to train AI models.</li>
+<li>No data is sold, used for advertising, or shared with anyone beyond the services listed above, and the
+app itself never uses your data to train AI models.</li>
 </ul>
 <p>The app's use of information received from Google APIs adheres to the
 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
